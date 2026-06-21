@@ -89,7 +89,7 @@ export default function DashboardPage() {
             Dashboard
           </button>
           <button className="link-button" onClick={() => navigate('/licenses')}>
-            License Renewal
+            License Renewals
           </button>
         </nav>
         <div className="sidebar-footer">
