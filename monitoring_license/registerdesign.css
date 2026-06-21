@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.register-container {
+    width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* This is a general rule for all inputs with an icon on the left */
+.form-group.icon-input input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Default left padding for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+/* This is the rule for the lock/user icons on the left side of the inputs */
+.form-group.icon-input i.fa {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 1.1em;
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/* --- The corrected styles for the password field with BOTH icons ---*/
+/* ------------------------------------------------------------------------- */
+
+/* Make the password group a relative container to position the eye icon */
+.form-group.password-group {
+    position: relative;
+}
+
+/* Correct padding for the password input to accommodate BOTH icons */
+.password-group .input-wrapper input#password {
+    padding-left: 35px;  /* Space for the lock icon on the left */
+    padding-right: 40px; /* Space for the eye icon on the right */
+}
+
+/* This targets the eye icon button */
+.password-group button#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #888;
+    font-size: 1.2em;
+}
+
+.password-policy {
+    font-size: 13px;
+    color: #d80000;
+    margin-bottom: 8px;
+}
+
+.password-policy ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.password-policy li {
+    margin-bottom: 2px;
+}
+
+.password-match {
+    font-size: 13px;
+    color: #d80000;
+    margin-bottom: 8px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0e0808;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: hsl(0, 0%, 0%);
+}
+
+p.message {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.register-logo {
+    width: 150px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+.login-redirect {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #444;
+}
+
+.login-link {
+    color: #0e0808;
+    text-decoration: underline;
+    font-weight: normal;
+    transition: color 0.2s ease;
+}
+
+.login-link:hover {
+    color: #333;
+}
